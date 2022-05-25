@@ -26,5 +26,4 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           file: ./SMARTS/utils/docker/Dockerfile
-          repository: huaweinoah/smarts
           tags: huaweinoah/smarts:latest
