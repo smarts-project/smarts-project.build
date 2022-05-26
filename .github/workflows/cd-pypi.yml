@@ -10,9 +10,9 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-        with:
-          repository: huawei-noah/SMARTS
-          path: '.'
+      with:
+        repository: huawei-noah/SMARTS
+        path: '.'
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
