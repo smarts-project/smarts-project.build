@@ -1,2 +1,2 @@
 # smarts-project.build
-Manages building SMARTS
+Manages building the SMARTS simulation platform.
