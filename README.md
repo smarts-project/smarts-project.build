@@ -4,3 +4,5 @@
 [![readthedocs-auto-build](https://github.com/smarts-project/smarts-project.build/actions/workflows/readthedocs-auto-build.yml/badge.svg)](https://github.com/smarts-project/smarts-project.build/actions/workflows/readthedocs-auto-build.yml)
 
 This is a simple set of utilities that manage building the SMARTS simulation platform releases.
+
+# TODO: only update PyPI if package version has changed.
