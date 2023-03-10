@@ -5,4 +5,6 @@
 
 This is a simple set of utilities that manage building the SMARTS simulation platform releases.
 
-# TODO: only update PyPI if package version has changed.
+
+### TODO
+- Only update PyPI if package version has changed. Use caching to determine if there is a change: https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#comparing-artifacts-and-dependency-caching
