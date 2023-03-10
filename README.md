@@ -8,3 +8,4 @@ This is a simple set of utilities that manage building the SMARTS simulation pla
 
 ### TODO
 - Only update PyPI if package version has changed. Use caching to determine if there is a change: https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#comparing-artifacts-and-dependency-caching
+- Build docker images when there is a new SMARTS version.
