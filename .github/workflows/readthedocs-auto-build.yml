@@ -24,4 +24,4 @@ jobs:
         apt-get install -y libenchant-dev
      - name: build_docs
        run: |
-        curl -X POST -d "branches=develop" -d "token=${{ secrets.RTDS_WEBHOOK_TOKEN }}" ${{ secrets.RTDS_WEBHOOK_URL }}
+        curl -X POST -d "branches=master" -d "token=${{ secrets.RTDS_WEBHOOK_TOKEN }}" ${{ secrets.RTDS_WEBHOOK_URL }}
