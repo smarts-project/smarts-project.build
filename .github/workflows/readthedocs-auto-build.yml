@@ -6,13 +6,13 @@ on:
       # Runs at 11.00pm, UTC, every Monday
   push:
     branches:
-      - develop
+      - master
   release:
     branches:
-      - develop
+      - master
   merge_group:
     branches:
-      - develop
+      - master
 
 jobs:
   readthedocs-auto-build:
