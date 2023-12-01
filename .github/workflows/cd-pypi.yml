@@ -34,7 +34,6 @@ jobs:
       run: |
         twine check --strict dist/*    
     - name: Publish SMARTS to PyPI
-      if: ${{ failure() && steps.twine_check.conclusion == 'failure' }}
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         user: __token__
