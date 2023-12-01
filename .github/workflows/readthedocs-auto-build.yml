@@ -17,6 +17,7 @@ on:
 jobs:
   readthedocs-auto-build:
     runs-on: ubuntu-latest
+    container: ghcr.io/smarts-project/smarts:v0.6.1-minimal
     steps:
      - name: Install Enchant
        run: |
