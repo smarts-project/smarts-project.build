@@ -18,6 +18,10 @@ jobs:
   readthedocs-auto-build:
     runs-on: ubuntu-latest
     steps:
+     - name: Install Enchant
+       run: |
+        apt-get update --fix-missing
+        apt-get install -y libenchant-dev
      - name: build_docs
        run: |
         curl -X POST -d "branches=develop" -d "token=${{ secrets.RTDS_WEBHOOK_TOKEN }}" ${{ secrets.RTDS_WEBHOOK_URL }}
