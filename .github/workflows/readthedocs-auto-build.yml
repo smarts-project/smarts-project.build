@@ -23,6 +23,9 @@ jobs:
        run: |
         apt-get update --fix-missing
         apt-get install -y libenchant-dev
+     - name: Install curl
+       run: |
+        apt-get install curl
      - name: build_docs
        run: |
         curl -X POST -d "branches=master" -d "token=${{ secrets.RTDS_WEBHOOK_TOKEN }}" ${{ secrets.RTDS_WEBHOOK_URL }}
