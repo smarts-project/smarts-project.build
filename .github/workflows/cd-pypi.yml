@@ -12,17 +12,17 @@ jobs:
     runs-on: ubuntu-20.04
     #container: ghcr.io/smarts-project/smarts:v0.6.1-minimal
     steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        repository: huawei-noah/SMARTS
+        path: '.'
     - name: Setup Python
       uses: actions/setup-python@v5.1.0
       id: cp38
       with:
         python-version: "3.8"
         cache: pip
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        repository: huawei-noah/SMARTS
-        path: '.'
     - name: Install Enchant
       run: |
         apt-get update --fix-missing
