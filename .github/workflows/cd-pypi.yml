@@ -7,6 +7,7 @@ on:
 jobs:
   package:
     runs-on: ubuntu-20.04
+    container: ghcr.io/smarts-project/smarts:v0.6.1-minimal
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -24,7 +25,7 @@ jobs:
         apt-get install -y libenchant-dev
     - name: Install dependencies
       run: |
-        python3.8 -m pip install --upgrade pip
+        python -m pip install --upgrade pip
         pip install wheel==0.38.4
         pip install .[all]
         pip install -r requirements.txt
