@@ -2,12 +2,11 @@ name: SMARTS CD PyPI
 
 on:
   schedule:
-    - cron: '30 8 * * *'
+    - cron: '0 10 * * *'
 
 jobs:
   package:
     runs-on: ubuntu-20.04
-    container: ghcr.io/smarts-project/smarts:v0.6.1-minimal
     steps:
     - name: Checkout
       uses: actions/checkout@v2
