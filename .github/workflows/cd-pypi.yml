@@ -17,11 +17,6 @@ jobs:
       with:
         repository: huawei-noah/SMARTS
         path: '.'
-    - name: Setup Python
-      uses: actions/setup-python@v4
-      id: cp38
-      with:
-        python-version: "3.8"
     - name: Install Enchant
       run: |
         apt-get update --fix-missing
