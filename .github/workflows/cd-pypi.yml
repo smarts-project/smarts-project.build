@@ -10,7 +10,6 @@ on:
 jobs:
   package:
     runs-on: ubuntu-20.04
-    #container: ghcr.io/smarts-project/smarts:v0.6.1-minimal
     steps:
     - name: Checkout
       uses: actions/checkout@v2
